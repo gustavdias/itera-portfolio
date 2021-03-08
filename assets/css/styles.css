@@ -292,22 +292,12 @@ img {
 }
 
 /*===== HOME =====*/
-.home {
-  position: relative;
-  right: 8rem;
-}
 .home__container {
   height: calc(100vh - var(--header-height));
-  row-gap: 2rem;
+  background: darkgray;
 }
 .home__img {
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
-  width: 120px;
-  height: 120px;
-  overflow: hidden;
-  top: -20px;
+  background: chocolate;
 }
 .home__img img {
   width: 100%;
@@ -317,20 +307,22 @@ img {
   font-size: var(--big-font-size);
   color: var(--dark-text-color);
   line-height: 0.8;
+  display: inline;
+}
+.home__subtitle {
+  position: relative;
+  display: inline;
+  bottom: 6rem;
+  right: 2rem;
 }
 .home__scroll {
   align-self: flex-end;
   padding-bottom: var(--mb-4);
+  background: chartreuse;
 }
 .home__scroll-link {
   transform: rotate(-180deg);
   color: var(--first-text-color);
-}
-.home__img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 295px;
 }
 
 /* ===== ABOUT =====*/
