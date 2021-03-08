@@ -17,7 +17,7 @@
   --transparent: transparent;
 }
 
-/*===== Fonte e tipografia =====*/
+/*===== Font and typography =====*/
 :root {
   --body-font: "Roboto", sans-serif;
   --big-font-size: 3.25rem;
@@ -29,12 +29,13 @@
   :root {
     --big-font-size: 5.5rem;
     --h2-font-size: 4rem;
+    --logo-font-size: 1.25rem;
     --normal-font-size: 0.8rem;
     --small-font-size: 0.875rem;
   }
 }
 
-/*===== Margens =====*/
+/*===== Margins =====*/
 :root {
   --mb-1: 0.5rem;
   --mb-2: 1rem;
@@ -133,6 +134,48 @@ img {
   width: 100%;
 }
 
+.button-2 {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: var(--first-color);
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.button-2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--transparent);
+  border-radius: 10rem;
+  z-index: -2;
+}
+.button-2:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--first-color);
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.button-2:hover {
+  color: #fff;
+}
+.button-2:hover:before {
+  width: 100%;
+}
+
 .contrast__text__color {
   color: var(--first-text-color);
   font-weight: bold;
@@ -172,10 +215,14 @@ img {
   margin-right: var(--mb-2);
 }
 
+.shapes-wrapper {
+  background-image: url("/assets/img/home-shapes.webp");
+  background-size: cover;
+}
+
 /*===== Header =====*/
 .l-header {
   width: 100%;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
@@ -189,7 +236,7 @@ img {
   align-items: center;
 }
 .nav__logo {
-  font-size: var(--h2-font-size);
+  font-size: var(--logo-font-size);
 }
 @media screen and (max-width: 768px) {
   .nav__menu {
@@ -242,8 +289,6 @@ img {
 /*===== HOME =====*/
 .home {
   position: relative;
-  background-image: url("/assets/img/home-shapes.webp");
-  background-size: cover;
   top: -1rem;
   right: -0.1rem;
   overflow: hidden;
@@ -251,15 +296,13 @@ img {
 .home__container {
   height: calc(100vh - var(--header-height));
   row-gap: 5rem;
+  overflow: auto;
 }
 .home__title {
   align-self: flex-end;
   font-size: var(--big-font-size);
   color: var(--dark-text-color);
   line-height: 0.8;
-}
-.home__title span {
-  text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
 }
 .home__scroll {
   align-self: flex-end;
@@ -465,12 +508,14 @@ img {
 
 /* ===== MEDIA QUERIES=====*/
 /* For small devices */
+/* home image */
 @media screen and (max-width: 320px) {
   .home__img {
     width: 230px;
     background-image: "assets/img/home-hero.webp";
   }
 }
+/* ===== Medium screen =====*/
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -487,6 +532,7 @@ img {
     top: 3rem;
   }
 
+  /* ===== Nav =====*/
   .nav {
     height: calc(var(--header-height) + 1rem);
   }
@@ -511,16 +557,18 @@ img {
     background-color: var(--first-text-color);
   }
 
+  /* ===== Home =====*/
   .home__container {
     height: 100vh;
     grid-template-rows: 1.7fr 1fr;
     row-gap: 0;
   }
   .home__img {
-    width: 524px;
-    right: 10%;
+    width: 600px;
+    height: 600px;
   }
 
+  /* ===== About =====*/
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -528,24 +576,27 @@ img {
     padding: 4rem 0;
   }
   .about__img {
-    width: 200px;
-    height: 200px;
+    width: 600px;
+    height: 600px;
   }
   .about__img img {
-    width: 165px;
+    width: 545px;
   }
 
+  /* ===== Skills =====*/
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 
+  /* ===== Portfolio =====*/
   .portfolio__container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 2rem;
   }
 
+  /* ===== Contact =====*/
   .contact__container {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -559,6 +610,7 @@ img {
     justify-items: center;
   }
 }
+/* ===== Big Screen =====*/
 @media screen and (min-width: 1024px) {
   .bd-grid {
     margin-left: auto;

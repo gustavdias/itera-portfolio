@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -8,251 +9,287 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!-- ===== BOX ICONS ===== -->
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 
     <title>Portfolio responsive complete</title>
-  </head>
-  <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <div>
-          <a href="#" class="nav__logo"
-            >John Doe<span class="contrast__text__color">.</span></a
-          >
-        </div>
+</head>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">Portfolio</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
-          </ul>
-        </div>
+<body>
+    <div class="shapes-wrapper">
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
-    </header>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">John Doe<span class="contrast__text__color">.</span></a> </div>
 
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home" id="home">
-        <div class="home__container bd-grid">
-          <h1 class="home__title">
-            <span>Hello</span><br />I am<br />John<span
-              class="contrast__text__color"
-              >.</span
-            >
-          </h1>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About me</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">What I do?</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">Portfolio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
 
-          <div class="home__scroll">
-            <a href="#" class="button">Say Hello</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </nav>
+        </header>
 
-            <a href="#about" class="home__scroll-link"
-              ><i class="bx bx-up-arrow-alt"></i>About me</a
-            >
-          </div>
+        <main class="l-main">
 
-          <img src="assets/img/home-hero.webp" alt="" class="home__img" />
-        </div>
-      </section>
+            <!--===== test =====-->
 
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about">
+            <!-- <section class="home__shapes section" id="home"> -->
+            <!-- <h2 class="section-title">About</h2> -->
+            <!--  -->
+            <!-- <div class="about__container bd-grid"> -->
+            <!--  -->
+            <!-- <div> -->
+            <!-- <h1 class="home__title"> -->
+            <!-- <span>Hello</span><br />I am<br />John<span class="contrast__text__color">.</span> -->
+            <!-- </h1> -->
+            <!-- <p class="home__subtitle">a Graphic and UI Designer</p> -->
+            <!-- <div class="home__scroll"> -->
+            <!-- <a href="#contact" class="button">Say Hello</a> -->
+            <!-- <a href="#about" class=" button-2">About<i class="bx bx-right-arrow-alt"></i></a> -->
+            <!--  -->
+            <!--  -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!--  -->
+            <!-- <div class="about__img"> -->
+            <!-- <img src="assets/img/home-hero.webp" alt="" class="home__img" /> -->
+            <!--  -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </section> -->
+
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+
+                    <h1 class="home__title">
+                        <span>Hello</span><br />I am<br />John<span class="contrast__text__color">.</span>
+                    </h1>
+                    <p class="home__subtitle">a Graphic and UI Designer</p>
+
+                    <div class="home__scroll">
+                        <a href="#contact" class="button">Say Hello</a>
+                        <a href="#about" class=" button-2">About<i class="bx bx-right-arrow-alt"></i></a>
+
+
+                    </div>
+
+                    <img src="assets/img/home-hero.webp" alt="" class="home__img" />
+                </div>
+            </section>
+
+
+    </div>
+
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
         <!-- <h2 class="section-title">About</h2> -->
 
         <div class="about__container bd-grid">
-          
-          <div class="about__img">
-            <img src="assets/img/about.webp" alt="" />
-          </div>
 
-          <div>
-            <span class="about__profession">About Me</span>
-            <h2 class="about__subtitle">
-              Who am I<span class="contrast__text__color">?</span>
-            </h2>
-            <p class="about__text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
-              consectetur, architecto quas fugiat, iste inventore facere
-              repellendus delectus id, vitae blanditiis.
-            </p>
+            <div class="about__img">
+                <img src="assets/img/about.webp" alt="" />
+            </div>
 
-            <!-- <div class="about__social"> -->
-            <!-- <a href="#" class="about__social-icon" -->
-            <!-- ><i class="bx bxl-linkedin"></i -->
-            <!-- ></a> -->
-            <!-- <a href="#" class="about__social-icon" -->
-            <!-- ><i class="bx bxl-github"></i -->
-            <!-- ></a> -->
-            <!-- <a href="#" class="about__social-icon" -->
-            <!-- ><i class="bx bxl-dribbble"></i -->
-            <!-- ></a> -->
-            <!-- </div> -->
-          </div>
+            <div>
+                <span class="about__profession">About Me</span>
+                <h2 class="about__subtitle">
+                    Who am I<span class="contrast__text__color">?</span>
+                </h2>
+                <p class="about__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+                    consectetur, architecto quas fugiat, iste inventore facere
+                    repellendus delectus id, vitae blanditiis.
+                </p>
+                <a href="#contact" class=" button-2">Find out more<i class="bx bx-right-arrow-alt"></i></a>
+
+                <!-- <div class="about__social"> -->
+                <!-- <a href="#" class="about__social-icon" -->
+                <!-- ><i class="bx bxl-linkedin"></i -->
+                <!-- ></a> -->
+                <!-- <a href="#" class="about__social-icon" -->
+                <!-- ><i class="bx bxl-github"></i -->
+                <!-- ></a> -->
+                <!-- <a href="#" class="about__social-icon" -->
+                <!-- ><i class="bx bxl-dribbble"></i -->
+                <!-- ></a> -->
+                <!-- </div> -->
+            </div>
         </div>
-      </section>
+    </section>
 
-      <!--===== SKILLS =====-->
-      <section class="skills section" id="skills">
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
         <h2 class="section-title">My Skills</h2>
         <p class="skills__text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
-          consectetur, architecto quas fugiat, iste inventore facere repellendus
-          delectus id, vitae blanditiis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+            consectetur, architecto quas fugiat, iste inventore facere repellendus
+            delectus id, vitae blanditiis.
         </p>
 
 
 
         <div class="wrapper">
-          <ul class="stats">
-            <li>
-              <strong>Languages</strong>
-              <span>- CSS3 (SCSS,LESS)</span>
-              <span>- HTML5</span>
-              <span>- JavaScript (ES6)</span>
-              <span>- PHP</span>
-              <span>- Python</span>
+            <ul class="stats">
+                <li>
+                    <strong>Languages</strong>
+                    <span>- CSS3 (SCSS,LESS)</span>
+                    <span>- HTML5</span>
+                    <span>- JavaScript (ES6)</span>
+                    <span>- PHP</span>
+                    <span>- Python</span>
 
-            </li>
-            <li>
-              <strong>Method & Tolls</strong>
-              <span>- BEM, ITCSS, OOCSS</span>
-              <span>- NPM scripts, Webpack, Gulp</span>
-              <span>- Progressive Web Apps (ES6)</span>
-              <span>- UX principles and accessibility</span>
-    </li>
-            <li>
-              <strong>Frameworks & Libs</strong>
-              <span>- Drupal (7/8)</span>
-              <span>Frameworks</span>
-              <span>Frameworks</span>
-              <span>Frameworks</span>
-              <span>Frameworks</span>
+                </li>
+                <li>
+                    <strong>Method & Tolls</strong>
+                    <span>- BEM, ITCSS, OOCSS</span>
+                    <span>- NPM scripts, Webpack, Gulp</span>
+                    <span>- Progressive Web Apps (ES6)</span>
+                    <span>- UX principles and accessibility</span>
+                </li>
+                <li>
+                    <strong>Frameworks & Libs</strong>
+                    <span>- Drupal (7/8)</span>
+                    <span>Frameworks</span>
+                    <span>Frameworks</span>
+                    <span>Frameworks</span>
+                    <span>Frameworks</span>
 
-            </li>
-            <li>
-              <strong>Frameworks & Libs</strong>
-              <span>Courses</span>
-              <span>Courses</span>
-              <span>Courses</span>
-              <span>Courses</span>
-              <span>Courses</span>
-              <span>Courses</span>            </li>
+                </li>
+                <li>
+                    <strong>Frameworks & Libs</strong>
+                    <span>Courses</span>
+                    <span>Courses</span>
+                    <span>Courses</span>
+                    <span>Courses</span>
+                    <span>Courses</span>
+                    <span>Courses</span> </li>
 
-          </ul>
+            </ul>
         </div>
         <!-- <div class="skills__container bd-grid"> -->
-          <!-- <div class="skills__box"> -->
-            <!-- <h3 class="skills__subtitle">Development</h3> -->
-            <!-- <span class="skills__name">Html</span> -->
-            <!-- <span class="skills__name">Css</span> -->
-            <!-- <span class="skills__name">Javascript</span> -->
-            <!-- <span class="skills__name">Scss</span> -->
-            <!-- <span class="skills__name">React</span> -->
-            <!-- <span class="skills__name">Vue</span> -->
-<!--  -->
-            <!-- <h3 class="skills__subtitle">Design</h3> -->
-            <!-- <span class="skills__name">Figma</span> -->
-            <!-- <span class="skills__name">Adobe XD</span> -->
-            <!-- <span class="skills__name">Photoshop</span> -->
-          <!-- </div> -->
+        <!-- <div class="skills__box"> -->
+        <!-- <h3 class="skills__subtitle">Development</h3> -->
+        <!-- <span class="skills__name">Html</span> -->
+        <!-- <span class="skills__name">Css</span> -->
+        <!-- <span class="skills__name">Javascript</span> -->
+        <!-- <span class="skills__name">Scss</span> -->
+        <!-- <span class="skills__name">React</span> -->
+        <!-- <span class="skills__name">Vue</span> -->
+        <!--  -->
+        <!-- <h3 class="skills__subtitle">Design</h3> -->
+        <!-- <span class="skills__name">Figma</span> -->
+        <!-- <span class="skills__name">Adobe XD</span> -->
+        <!-- <span class="skills__name">Photoshop</span> -->
+        <!-- </div> -->
 
-          <!-- <div class="skills__img"> -->
-            <!-- <img src="assets/img/skill.jpg" alt="" /> -->
-          <!-- </div> -->
+        <!-- <div class="skills__img"> -->
+        <!-- <img src="assets/img/skill.jpg" alt="" /> -->
+        <!-- </div> -->
         </div>
-      </section>
+    </section>
 
-      <!--===== PORTFOLIO =====-->
-      <section class="portfolio section" id="portfolio">
+    <!--===== PORTFOLIO =====-->
+    <section class="portfolio section" id="portfolio">
         <h2 class="section-title">Portfolio</h2>
 
         <div class="portfolio__container bd-grid">
-          <div class="portfolio__img">
-            <img src="assets/img/port1.webp" alt="" />
+            <div class="portfolio__img">
+                <img src="assets/img/port1.webp" alt="" />
 
-            <div class="portfolio__link">
-              <a href="#" class="portfolio__link-name">View details</a>
+                <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name">View details</a>
+                </div>
             </div>
-          </div>
-          <div class="portfolio__img">
-            <img src="assets/img/port2.webp" alt="" />
+            <div class="portfolio__img">
+                <img src="assets/img/port2.webp" alt="" />
 
-            <div class="portfolio__link">
-              <a href="#" class="portfolio__link-name">View details</a>
+                <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name">View details</a>
+                </div>
             </div>
-          </div>
-          <div class="portfolio__img">
-            <img src="assets/img/port3.webp" alt="" />
+            <div class="portfolio__img">
+                <img src="assets/img/port3.webp" alt="" />
 
-            <div class="portfolio__link">
-              <a href="#" class="portfolio__link-name">View details</a>
+                <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name">View details</a>
+                </div>
             </div>
-          </div>
-          <div class="portfolio__img">
-            <img src="assets/img/port4.webp" alt="" />
+            <div class="portfolio__img">
+                <img src="assets/img/port4.webp" alt="" />
 
-            <div class="portfolio__link">
-              <a href="#" class="portfolio__link-name">View details</a>
+                <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name">View details</a>
+                </div>
             </div>
-          </div>
-          <div class="portfolio__img">
-            <img src="assets/img/port5.webp" alt="" />
+            <div class="portfolio__img">
+                <img src="assets/img/port5.webp" alt="" />
 
-            <div class="portfolio__link">
-              <a href="#" class="portfolio__link-name">View details</a>
+                <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name">View details</a>
+                </div>
             </div>
-          </div>
-          <div class="portfolio__img">
-            <img src="assets/img/port6.webp" alt="" />
+            <div class="portfolio__img">
+                <img src="assets/img/port6.webp" alt="" />
 
-            <div class="portfolio__link">
-              <a href="#" class="portfolio__link-name">View details</a>
+                <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name">View details</a>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+        <div>
+            <a href="#contact" class=" button-2">Find out more<i class="bx bx-right-arrow-alt"></i></a>
+
+        </div>
+    </section>
 
 
     </main>
 
     <!--===== FOOTER =====-->
-    <footer class="footer" id="contact">
+    <section class="footer" id="contact">
 
-      <h2 class="footer__title">Let's work together<span class="contrast__text__color">.</span></h2>
+        <h2 class="footer__title">Let's work together<span class="contrast__text__color">.</span></h2>
 
-      <div class="about__img">
-        <img src="assets/img/about.webp" alt="" />
-      </div>
-      <div class="footer__social">
-        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-behance"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-dribbble"></i></a>
+        <div class="about__img">
+            <img src="assets/img/about.webp" alt="" />
+        </div>
+
+        <div>
+            <a href="#contact" class=" button">Find out more<i class="bx bx-right-arrow-alt"></i></a>
+
+        </div>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="footer__icon"><i class="bx bxl-behance"></i></a>
+            <a href="#" class="footer__icon"><i class="bx bxl-dribbble"></i></a>
 
 
-      </div>
-      <p>&#169; 2021 copyright all right reserved - <a href="https://gustavodias.xyz/">Gustavo Dias</a></p>
-    </footer>
+        </div>
+        <p>&#169; 2021 copyright all right reserved - <a href="https://gustavodias.xyz/">Gustavo Dias</a></p>
+    </section>
 
     <!-- <footer class="footer section"> -->
     <!-- <div class="footer__container bd-grid"> -->
@@ -290,5 +327,6 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
-  </body>
+</body>
+
 </html>
