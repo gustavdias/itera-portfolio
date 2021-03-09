@@ -293,7 +293,6 @@ img {
   position: absolute;
   content: "";
   width: 100%;
-  height: 0.18rem;
   left: 0;
   top: 2rem;
   background-color: var(--first-color);
@@ -620,7 +619,7 @@ img {
     margin-right: auto;
   }
 }
-/* For tall screens on mobiles y desktop*/
+/* For tall screens on mobiles ands desktop*/
 @media screen and (min-height: 721px) {
   .home__container {
     height: 640px;
