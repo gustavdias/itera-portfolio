@@ -23,7 +23,7 @@
 :root {
     --body-font: "Roboto", sans-serif;
 
-    --big-font-size: 3.25rem;
+    --big-font-size: 5.5rem;
     --h2-font-size: 2.25rem;
 
     --normal-font-size: 0.738rem;
@@ -95,7 +95,7 @@ img {
     display: block;
 }
 
-//!
+//////!
 .center_align {
     margin: 0 auto;
     text-align: center;
@@ -224,7 +224,7 @@ img {
             right: 0;
             margin: auto;
             top: 2rem;
-            background-color: var(--first-color);
+            // background-color: var(--first-color);
         }
     }
 }
@@ -367,11 +367,7 @@ img {
         }
     }
 
-    //!
-    &__text {
-        display: inline-block;
-        width: 50%;
-    }
+
 
     &__title {
         display: inline-block;
@@ -393,6 +389,14 @@ img {
         bottom: 6rem;
         right: 2rem;
 
+
+    }
+
+    &__under-title {
+        position: relative;
+        display: inline;
+        bottom: 4.8rem;
+        right: 6.8rem;
     }
 
     &__scroll {
@@ -659,17 +663,26 @@ img {
 // }
 
 /* ===== MEDIA QUERIES=====*/
-/* For small devices */
 
-/* home image */
-@media screen and (max-width: 320px) {
-    .home__img {
-        width: 230px;
-        background-image: "assets/img/home-hero.webp";
+/* ===== Small screen 320px =====*/
+@media screen and (max-width: 768px) {
+
+    .nav {
+        justify-content: space-between;
+
     }
 }
 
-/* ===== Medium screen =====*/
+/* home image */
+@media screen and (max-width: 320px) {
+    // .home__img {
+    //     width: 230px;
+    //     background-image: "assets/img/home-hero.webp";
+    // }
+}
+
+/* ===== Medium screen 768 =====*/
+//burger menu
 @media screen and(min-width: 768px) {
     body {
         margin: 0;
@@ -709,7 +722,7 @@ img {
             color: var(--dark-text-color);
 
             &:hover {
-                color: var(--light-color);
+                color: var(--first-text-color);
             }
         }
     }
@@ -722,15 +735,23 @@ img {
     .home {
         &__container {
             height: 100vh;
-            grid-template-rows: 1.7fr 1fr;
-            row-gap: 0;
+            // grid-template-rows: 1.7fr 1fr;
+            // row-gap: 0;
         }
 
         &__img {
             // width: 524px;
             // right: 10%;
-            width: 300px;
-            height: 300px;
+            width: 500px;
+
+        }
+
+        //!
+        &__text {
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            bottom: 50px;
         }
     }
 
@@ -750,6 +771,8 @@ img {
 
             & img {
                 width: 545px;
+                height: 600px;
+
             }
         }
     }
@@ -798,6 +821,11 @@ img {
 
 @media screen and(min-width: 1024px) {
     .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-bd-grid {
         margin-left: auto;
         margin-right: auto;
     }
