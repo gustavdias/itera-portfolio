@@ -25,6 +25,7 @@
 
     --big-font-size: 5.5rem;
     --h2-font-size: 2.25rem;
+    --big-font-size: 5.5rem;
 
     --normal-font-size: 0.738rem;
     --small-font-size: 0.813rem;
@@ -831,7 +832,7 @@ img {
     }
 }
 
-/* For tall screens on mobiles ands desktop*/
+/* For tall screens on mobiles  desktop*/
 @media screen and (min-height: 721px) {
     .home {
         &__container {
